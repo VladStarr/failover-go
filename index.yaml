@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  failover:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-10T13:58:38.418899379Z"
+    description: A Helm chart for Kubernetes
+    digest: 2e87e715a1eb5142b3ff0bd00d017cd455d9de6d7779a3638f7207be42df25d4
+    name: failover
+    type: application
+    urls:
+    - https://github.com/VladStarr/failover-go/releases/download/failover-0.0.2/failover-0.0.2.tgz
+    version: 0.0.2
+generated: "2023-10-10T13:58:38.418903879Z"
