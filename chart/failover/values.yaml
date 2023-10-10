@@ -1,0 +1,32 @@
+image:
+  repository: vladstarr/failover
+  pullPolicy: Always
+  tag: latest
+
+imagePullSecrets: []
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+
+resources: {}
+
+tolerations: []
+affinity: {}
+nodeSelector: {}
+
+slavePodSelector: app.kubernetes.io/instance=my-slave-app
+slavePodNamespace: apps
+masterPodSelector: app.kubernetes.io/name=master-app,master=true
+watchedNodeSelector: size=large
+failoverPoolLabel: failover-pool=true
+sleepInterval: 5s
+logEveryRun: false
